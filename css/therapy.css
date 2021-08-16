@@ -1,0 +1,104 @@
+#outloader_1{
+	font-family: Roboto;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	background-color: white;
+	position: relative;
+}
+#outloader_1in{
+	height: 100vh;
+	width: 100vw;
+	background: linear-gradient(rgba(8, 8, 80, 0.781), rgba(9, 9, 85, 0.767)), url(/imgs/bg5.png);
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#responsible{
+	position: absolute; 
+	height: auto;
+	width: 100vw;
+	right: 0;
+	top: 11vh;
+	font-family: Boogaloo;
+	font-size: 115px;
+	color: rgb(231, 232, 246);
+	font-weight: 900;
+	text-align: center;
+	text-shadow: 3px 4px black;
+	animation:  text1 3s;
+	animation-delay: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	translate: (-100px, 200px);
+}
+@keyframes text1{
+	0%{text-shadow: -1px -1px 0 black, -1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black}
+	100%{text-shadow: -5px -5px 0 black, -5px -5px 0 black, -5px 5px 0 black, 5px 5px 0 black}
+}
+
+#sub{
+	position: absolute;
+	height: 33px;
+	width: 0vw;
+	font-family: Comfortaa;
+	font-size: 30px;
+	top: 60vh;
+	left: 30vw;
+	color: rgb(157, 188, 209);
+	text-shadow: 2px 2px rgb(30, 30, 30);
+	animation: text2 5s 3s steps(82, end) infinite,
+    blink-caret .75s step-end infinite;
+    animation-fill-mode: forwards;
+	overflow: hidden;
+	border-right: 1.5px solid transparent;
+	white-space: nowrap;
+    font-weight: bolder;
+}
+@keyframes text2{
+	0%{width: 0;}
+	70%{width: 39vw;}
+	90%{width: 39vw;}
+	100%{width: 0;}
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: yellow;}
+}
+
+#nav-ul {
+    margin: 0px;
+}
+
+
+.img-p-img {
+	width: calc(100vw - 80px);
+  }
+  
+  .img-p:hover > .img-p-img, .para:hover ~ img {
+	opacity: 0.2;
+	transition-duration: 1s;
+  }
+  
+  .img-p:hover > p, .para:hover {
+	font-size: 35px;
+	opacity: 1;
+  }
+  
+  .img-p {
+	position: relative;
+  text-align: center;
+  color: white;
+  }
+  
+  .para {
+	position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  opacity: 0;
+	  transform: translate(-50%, -50%);
+	  font-size: 35px;
+  }

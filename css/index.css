@@ -1,0 +1,106 @@
+*{
+	margin:0;
+}
+
+#outloader_1{
+	font-family: Roboto;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	background-color: white;
+	position: relative;
+}
+#outloader_1in{
+	height: 100vh;
+	width: 100vw;
+	background-image: url(../imgs/bg4.png);
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#responsible{
+	position: absolute; 
+	height: auto;
+	width: 100vw;
+	right: 0;
+	top: 11vh;
+	font-family: Boogaloo;
+	font-size: 115px;
+	color: rgb(162, 168, 250);
+	font-weight: 900;
+	text-align: center;
+	text-shadow: 3px 4px black;
+	animation:  text1 2s 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	translate: (-100px, 200px);
+	opacity: 0;
+}
+@keyframes text1{
+	0%{opacity: 0; transform: translate(-100px, 200px);}
+	20%{transform: rotateZ(-90deg);}
+	90%{transform: rotateZ(450deg);}
+	100%{opacity: 1; transform: translate(0,0);}
+}
+#sub{
+	position: absolute;
+	height: 33px;
+	width: 0vw;
+	font-family: Comfortaa;
+	font-size: 30px;
+	top: 60vh;
+	left: 30vw;
+	color: rgb(162, 159, 206);
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.699);
+	animation: text2 5s 3s steps(82, end) infinite,
+    blink-caret .75s step-end infinite;
+    animation-fill-mode: forwards;
+	overflow: hidden;
+	border-right: 1.5px solid transparent;
+	white-space: nowrap;
+    font-weight: bolder;
+}
+@keyframes text2{
+	0%{width: 0;}
+	70%{width: 39vw;}
+	90%{width: 39vw;}
+	100%{width: 0;}
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: yellow;}
+}
+
+.para{
+	opacity: 1;
+	position: absolute;
+	height: auto;
+	width: 60vw;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.534);
+	margin: 35vh 20vw 35vh 15vw;
+	font-size: 25px;
+}
+
+.bg{
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.5;
+}
+
+.bg-1{
+	background-image: url(/imgs/pg1-1.png);
+}
+
+.bg-2 {
+	background-image: url(/imgs/pg1-2.png);
+}
+
+.bg-3 {
+	background-image: url(/imgs/pg1-3.png);
+}

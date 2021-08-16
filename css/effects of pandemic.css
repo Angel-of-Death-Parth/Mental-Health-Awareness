@@ -1,0 +1,106 @@
+#outloader_1{
+	font-family: Roboto;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	background-color: white;
+	position: relative;
+}
+#outloader_1in{
+	height: 100vh;
+	width: 100vw;
+	background: linear-gradient(rgba(3, 4, 70, 0.623), rgba(2, 18, 92, 0.637)), url(/imgs/bg3.jpg);
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#responsible{
+	position: absolute; 
+	height: auto;
+	width: 50vw;
+	right: 0;
+	margin: 10px 25vw;
+	top: 11vh;
+	font-family: Boogaloo;
+	font-size: 115px;
+	font-weight: 900;
+	text-align: center;
+	text-shadow: 3px 4px black;
+	animation:  text1 6s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	translate: (-100px, 200px);
+	opacity: 100%;
+    box-shadow: 15px 15px 20px black;	
+}
+@keyframes text1{
+	0% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        box-shadow: 15px 15px 20px black;
+    }
+    33% { 
+        border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+        box-shadow: -10px -5px 20px black;
+    }
+    66% {
+        border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+        box-shadow: -10px -5px 20px black;
+    }
+    100% {
+        border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+        box-shadow: 15px 15px 20px black;		
+    }
+}
+
+#sub{
+	position: absolute;
+	height: 33px;
+	width: 0vw;
+	font-family: Comfortaa;
+	font-size: 30px;
+	top: 60vh;
+	left: 30vw;
+	color: rgb(255, 255, 255);
+	text-shadow: 4px 4px 2px rgb(30, 30, 30);
+	animation: text2 5s 2s steps(82, end) infinite,
+    blink-caret .75s step-end infinite;
+    animation-fill-mode: forwards;
+	overflow: hidden;
+	border-right: 1.5px solid transparent;
+	white-space: nowrap;
+    font-weight: bolder;
+}
+@keyframes text2{
+	0%{width: 0;}
+	70%{width: 39vw;}
+	90%{width: 39vw;}
+	100%{width: 0;}
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: yellow;}
+}
+
+#nav-ul {
+    margin: 0px;
+}
+
+.pg3-img{
+	width: 45%;
+	opacity: 0;
+	margin-top: 50px;
+	transition: opacity 1.5s 0s ease;
+	transition-delay: 6s;
+}
+
+.img-transition {
+	opacity: 1;
+}
+
+
+.para {
+	background-color: rgba(255, 255, 254, 0.363);
+}
